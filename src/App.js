@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from "react";
+import {Header} from "./components/Header";
+import {Home} from "./components/Home";
+import {LeftMenu} from "./components/LeftMenu";
+import {Footer} from "./components/Footer";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const pages = ['home', 'work', 'exp']
+    const [currentPage, setCurrentPage] = useState('home');
+    const [menuActive, setMenuActive] = useState(false);
+    const onOpenMenu = () => {
+        setMenuActive(true);
+    }
+    const onCloseMenu = () => {
+        setMenuActive(false);
+    }
+
+    const toggleMenu = () => {
+        setMenuActive(!menuActive);
+    }
+    return (
+        <div className="App">
+            <Header
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+                pages={pages}
+                toggleMenu={toggleMenu}
+            />
+            <LeftMenu
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+                pages={pages}
+                active={menuActive}
+                onClose={onCloseMenu}
+            />
+            <Home />
+            <Footer />
+
+        </div>
+    );
 }
 
 export default App;

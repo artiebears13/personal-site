@@ -1,0 +1,41 @@
+@import "vars";
+@import "mixins";
+
+.card-trophy{
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: white;
+  transition: transform .3s;
+  &:hover{
+    transition: all .3s;
+    transform: scale(1.1);
+  }
+  &__title{
+    text-align: center;
+  }
+  &__text{
+    text-align: center;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 5px 0;
+    font-weight: 550;
+  }
+}
+
+.wins-banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @include media($tablet){
+    flex-direction: column;
+  }
+}
+

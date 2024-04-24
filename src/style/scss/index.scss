@@ -1,0 +1,80 @@
+@import "normalize";
+@import "vars";
+@import "mixins";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "banner";
+@import "wins";
+@import "aboutCard";
+@import "leftMenu";
+@import "experience_block";
+@import "footer";
+@import "header";
+
+html{
+  font-family: Inter, sans-serif;
+
+}
+
+body{
+  background-color: white;
+  background: linear-gradient(
+                  to bottom,
+                  white 50%,
+                  #f9ebee 50%,
+                  white 100%);
+}
+
+.btn-sec{
+  background-color: #F5F6F7;
+  &:hover{
+    background-color: #d7d5d5;
+  }
+}
+
+main{
+  width: 900px;
+  margin: auto;
+
+  @include media($mobile) {
+    width: 100%;
+    padding: 0 5px;
+  }
+  @include media($desktop){
+    width: 80%;
+  }
+}
+
+
+
+h1{
+  @include title(10);
+  @include respondTo(768px, 992px){
+    font-size: 3rem;
+  }
+  @include respondTo(993px, 1024px){
+    font-size: 4rem;
+  }
+
+}
+
+h2{
+  @include media($tablet){
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  @include media($desktop){
+    font-size: 3rem;
+    font-weight: 900;
+  }
+}
+.horizontal-line {
+  display: inline-block;
+  width: 30px;
+  height: 2px; /* Set the height of the line */
+  background-color: black; /* Change the color as needed */
+  margin: 0 5px;
+}
