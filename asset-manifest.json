@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/personal-site/static/css/main.549ca0cb.css",
+    "main.js": "/personal-site/static/js/main.a86c5190.js",
+    "static/media/banner_image.png": "/personal-site/static/media/banner_image.748e5bb63e2c3c8085c4.png",
+    "static/media/python.png": "/personal-site/static/media/python.4f5f52c67194dc46e313.png",
+    "static/media/artmed.png": "/personal-site/static/media/artmed.bafc5d1d5c685dcd426a.png",
+    "static/media/notion.png": "/personal-site/static/media/notion.cfa8f0306734855aed3b.png",
+    "static/media/jira.png": "/personal-site/static/media/jira.e42463ea72d1b8a44c43.png",
+    "static/media/photoshop.png": "/personal-site/static/media/photoshop.f7db33b30145358b932c.png",
+    "static/media/git.png": "/personal-site/static/media/git.dfdd0989ffe0184bdd68.png",
+    "static/media/linux.png": "/personal-site/static/media/linux.884d4cfa528e3453728e.png",
+    "index.html": "/personal-site/index.html",
+    "main.549ca0cb.css.map": "/personal-site/static/css/main.549ca0cb.css.map",
+    "main.a86c5190.js.map": "/personal-site/static/js/main.a86c5190.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.549ca0cb.css",
+    "static/js/main.a86c5190.js"
+  ]
+}
