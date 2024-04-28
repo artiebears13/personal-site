@@ -10,7 +10,11 @@ export const Header = ({currentPage, setCurrentPage, pages, toggleMenu}) => {
             </div>
             <div className="nav__container">
                 {pages.map((page, index) => (
-                    <button className={`nav__item ${page === currentPage ? 'nav__item-active' : ''}`} key={index}>{page}</button>
+                    <button
+                        className={`nav__item ${page === currentPage ? 'nav__item-active' : ''}`}
+                        key={index}
+                        onClick={() => setCurrentPage(page)}
+                    >{page}</button>
                 ))}
                 <div className="nav__button-container">
                 <button className="btn nav__button">artiebears@mail.ru</button>

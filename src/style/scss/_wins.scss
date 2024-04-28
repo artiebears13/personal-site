@@ -14,7 +14,7 @@
   background-color: white;
   transition: transform .3s;
   &:hover{
-    transition: all .3s;
+    transition: transform .3s;
     transform: scale(1.1);
   }
   &__title{

@@ -16,8 +16,13 @@ export const BannerInfo = () => {
                     Hello, I'm a passionate Frontend developer and part time freelancer with a keen eye for details.
                 </div>
                 <div className="banner__info-description-buttons">
-                    <a href="https://t.me/artiebears13" target='_blank' className="btn btn-primary banner-btn">Write me</a>
-                    <a className="btn btn-sec banner-btn">View Portfolio     <i
+                    <a
+                        href="https://t.me/artiebears13"
+                        target='_blank'
+                        className="btn btn-primary banner-btn"
+                        rel="noopener noreferrer"
+                    >Write me</a>
+                    <a className="btn btn-sec banner-btn" href="#">View Portfolio     <i
                         className="fa-solid fa-arrow-up-right-from-square banner-fa"></i></a>
                 </div>
             </div>

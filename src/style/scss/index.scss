@@ -12,6 +12,8 @@
 @import "leftMenu";
 @import "experience_block";
 @import "footer";
+@import "work";
+@import "animations";
 @import "header";
 
 html{
@@ -37,6 +39,7 @@ body{
 
 main{
   width: 900px;
+  min-height: 80vh;
   margin: auto;
 
   @include media($mobile) {
@@ -78,3 +81,4 @@ h2{
   background-color: black; /* Change the color as needed */
   margin: 0 5px;
 }
+

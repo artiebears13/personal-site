@@ -1,8 +1,11 @@
 import {ExperienceBlock} from "./ExperienceBlock";
-import {ExperienceTech} from "./ExperienceTech";
+import {useRef} from "react";
+import useAnimatedScroll from "../../animations/useAnimatedScroll";
 
 export const ExperienceCard = ({which, history, colorClass}) => {
     console.log('history', history)
+    const experienceCardRef = useRef(null);
+    useAnimatedScroll(experienceCardRef);
 
 
     return (

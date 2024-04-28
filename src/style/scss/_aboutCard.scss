@@ -20,7 +20,7 @@
   &_avatar{
     width: 30%;
     @include media($tablet){
-      width: 250px;
+      width: 150px;
     }
     border-radius: 50%;
     background-color: #fbfbfb;
