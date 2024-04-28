@@ -1,12 +1,8 @@
-import useAnimatedScroll from "../../animations/useAnimatedScroll";
-import {useRef} from "react";
 
 export const WinCard = ({place, type,name, year,role, logo, animation}) => {
-    const winsCardRef = useRef(null);
-    useAnimatedScroll(winsCardRef, animation);
 
     return (
-        <div className="card-trophy" ref={winsCardRef}>
+        <div className="card-trophy">
             <div className="card-trophy__header">
                 <h3 className="card-trophy__title">{place}</h3>
             </div>

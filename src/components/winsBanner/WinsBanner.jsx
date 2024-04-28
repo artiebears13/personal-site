@@ -13,7 +13,6 @@ export const WinsBanner = () => {
             name: 'Digital Breakthrough: season AI',
             role: 'frontend',
             logo: goldTrophy,
-            animation: 'slide-in-left'
         },
         {
             place: '2nd',
@@ -22,7 +21,6 @@ export const WinsBanner = () => {
             name: 'Digital Breakthrough: season AI',
             role: 'frontend',
             logo: silverTrophy,
-            animation: 'scale-in-center'
         },
         {
             place: '2nd',
@@ -31,7 +29,6 @@ export const WinsBanner = () => {
             name: 'Digital Breakthrough: season AI',
             role: 'frontend',
             logo: silverTrophy,
-            animation: 'slide-in-right'
         },
     ];
 
@@ -46,7 +43,6 @@ export const WinsBanner = () => {
                     name={win.name}
                     role={win.role}
                     logo={win.logo}
-                    animation={win.animation}
                 />
             ))}
         </div>

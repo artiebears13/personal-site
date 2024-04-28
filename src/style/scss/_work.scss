@@ -1,6 +1,6 @@
 .test-card{
   width: 300px;
-  height: 500px;
+  height: 300px;
   border-radius: 5px;
   position: relative;
   &>img{
@@ -8,6 +8,7 @@
     height: 100%;
     overflow: hidden;
     object-fit: cover;
+    border-radius: 5px;
   }
   &__description{
     position: absolute;

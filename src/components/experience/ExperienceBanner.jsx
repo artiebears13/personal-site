@@ -1,23 +1,8 @@
 import {ExperienceCard} from "./ExperienceCard";
 import experience from './experience.json'
 import {ExperienceTech} from "./ExperienceTech";
-import {useRef} from "react";
-import useAnimatedScroll from "../../animations/useAnimatedScroll";
 
 export const ExperienceBanner = () => {
-    const experienceCardEdRef = useRef(null);
-    const experienceCardWorkRef = useRef(null);
-    const experienceCardTechRef = useRef(null);
-    useAnimatedScroll(experienceCardEdRef, 'slide-in-left');
-    useAnimatedScroll(experienceCardWorkRef, 'scale-in-center');
-    useAnimatedScroll(experienceCardTechRef, 'slide-in-right');
-    console.log(experience)
-
-    const refs = {
-        'experience__education': experienceCardEdRef,
-        'experience__tools': experienceCardTechRef,
-        'experience__work': experienceCardWorkRef,
-    }
 
     const getClass = (which) => {
         switch (which) {
@@ -35,7 +20,7 @@ export const ExperienceBanner = () => {
     return (
         <div className="experience-banner">
             {Object.keys(experience).map((key, index) => (
-                <div className="experience-card" key={index} ref={refs[getClass(key)]}>
+                <div className="experience-card" key={index} >
                     <div className={`experience-card__name ${getClass(key)} mb-5`}>
                         <div className={`horizontal-line ${getClass(key)}-line`}></div>
                         {key}</div>
@@ -48,7 +33,7 @@ export const ExperienceBanner = () => {
 
                 </div>
             ))}
-            <div className="experience-card experience-card__tech" ref={refs[getClass('tools i use')]}>
+            <div className="experience-card experience-card__tech" >
                 <div className={`experience-card__name ${getClass('tools i use')} mb-5`}>
                     <div className={`horizontal-line ${getClass('tools i use')}-line`}></div>
                     {'tools i use'}</div>
