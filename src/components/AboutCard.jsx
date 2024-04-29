@@ -12,7 +12,7 @@ export const AboutCard = () => {
                 <h3 className="about-banner_title">
                     frontend developer
                 </h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque beatae debitis dolore, et fugiat non obcaecati rerum vel veniam.
+                Graduate of Sirius University in Mathematical Modeling for Petroleum Engineering. Proficient in frontend development. Won 3 hackathons, specializing in frontend solutions.
             </div>
             <div className="about-banner_buttons">
                 <a

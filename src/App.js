@@ -4,10 +4,11 @@ import {Home} from "./components/Home";
 import {LeftMenu} from "./components/LeftMenu";
 import {Footer} from "./components/Footer";
 import {Work} from "./components/Work";
+import {Projects} from "./components/Projects";
 
 
 function App() {
-    const pages = ['home', 'work', 'exp']
+    const pages = ['home', 'work', 'projects']
     const [currentPage, setCurrentPage] = useState('home');
     const [menuActive, setMenuActive] = useState(false);
     const onOpenMenu = () => {
@@ -27,6 +28,8 @@ function App() {
                 return <Home />
             case 'work':
                 return <Work />
+            case 'projects':
+                return <Projects />
             default:
                 return <Home />
         }
@@ -44,6 +47,7 @@ function App() {
                 setCurrentPage={setCurrentPage}
                 pages={pages}
                 active={menuActive}
+                setMenuActive={setMenuActive}
                 onClose={onCloseMenu}
             />
             {getPage()}

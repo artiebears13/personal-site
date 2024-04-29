@@ -13,6 +13,9 @@
 @import "experience_block";
 @import "footer";
 @import "work";
+@import "cool_card";
+@import "projects";
+@import "work_card";
 @import "header";
 
 html{
@@ -37,9 +40,12 @@ body{
 }
 
 main{
-  width: 900px;
+  width: 1200px;
   min-height: 80vh;
   margin: auto;
+  @include media($projector){
+    width: 900px;
+  }
 
   @include media($mobile) {
     width: 100%;

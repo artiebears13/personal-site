@@ -18,9 +18,11 @@
     height: auto;
   }
   &_avatar{
-    width: 30%;
+    width: 200px;
+    margin-right: 20px;
     @include media($tablet){
       width: 150px;
+      margin: 0;
     }
     border-radius: 50%;
     background-color: #fbfbfb;
