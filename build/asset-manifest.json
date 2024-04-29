@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7b85f07.css",
+    "main.js": "/static/js/main.a2a77459.js",
+    "static/media/banner_image.png": "/static/media/banner_image.748e5bb63e2c3c8085c4.png",
+    "static/media/python.png": "/static/media/python.4f5f52c67194dc46e313.png",
+    "static/media/artmed.png": "/static/media/artmed.bafc5d1d5c685dcd426a.png",
+    "static/media/notion.png": "/static/media/notion.cfa8f0306734855aed3b.png",
+    "static/media/sirius.png": "/static/media/sirius.fe1e235b2eca875c2b06.png",
+    "static/media/promobot.png": "/static/media/promobot.d4fb818bd0e6265834a3.png",
+    "static/media/semantic_classification.png": "/static/media/semantic_classification.24384c3f77c484bbfbac.png",
+    "static/media/acselerator.png": "/static/media/acselerator.add6b3cb5ed6b272fbb1.png",
+    "static/media/jira.png": "/static/media/jira.e42463ea72d1b8a44c43.png",
+    "static/media/photoshop.png": "/static/media/photoshop.f7db33b30145358b932c.png",
+    "static/media/git.png": "/static/media/git.dfdd0989ffe0184bdd68.png",
+    "static/media/silver-cup.png": "/static/media/silver-cup.eb4349f08fe010cdcdf5.png",
+    "static/media/gold-cup.png": "/static/media/gold-cup.2c95103282c405edfc10.png",
+    "static/media/rzhd.png": "/static/media/rzhd.cbb2575e6025c8784eb0.png",
+    "static/media/linux.png": "/static/media/linux.884d4cfa528e3453728e.png",
+    "static/media/skyrus.svg": "/static/media/skyrus.7129dd2f356f8072f21167e0351441bb.svg",
+    "index.html": "/index.html",
+    "main.b7b85f07.css.map": "/static/css/main.b7b85f07.css.map",
+    "main.a2a77459.js.map": "/static/js/main.a2a77459.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7b85f07.css",
+    "static/js/main.a2a77459.js"
+  ]
+}
