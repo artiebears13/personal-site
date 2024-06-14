@@ -1,19 +1,21 @@
 import divider from '../../media/img/divider.png'
+import {useTranslation} from "react-i18next";
 
 export const BannerInfo = () => {
+    const { t } = useTranslation();
+
     return (
         <div className="banner__info-container">
             <div className="banner__info-divider">
-                <img src={divider} alt="" /> <span>frontend developer</span>
+                <img src={divider} alt="" /> <span>{t('bannerInfoComponent.job')}</span>
             </div>
             <h1>
-                Hello, I'm <br/>
-                Artem
-                Medvedev
+                {t('bannerInfoComponent.h1_greeting')} <br/>
+                {t('name')}
             </h1>
             <div className="banner__info-description">
                 <div className="banner__info-description-text">
-                    Hello, I'm a passionate Frontend developer and part time freelancer with a keen eye for details.
+                    {t('bannerInfoComponent.description')}
                 </div>
                 <div className="banner__info-description-buttons">
                     <a
@@ -21,8 +23,8 @@ export const BannerInfo = () => {
                         target='_blank'
                         className="btn btn-primary banner-btn"
                         rel="noopener noreferrer"
-                    >Write me</a>
-                    <a className="btn btn-sec banner-btn" href="#">View Portfolio     <i
+                    >{t('bannerInfoComponent.writeMeBtn')}</a>
+                    <a className="btn btn-sec banner-btn" href="https://artiebears.com/Medvedev_cv.pdf">{t('bannerInfoComponent.viewPortfolioBtn')}     <i
                         className="fa-solid fa-arrow-up-right-from-square banner-fa"></i></a>
                 </div>
             </div>

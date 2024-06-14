@@ -1,5 +1,7 @@
+import {useTranslation} from "react-i18next";
 
 export const WinCard = ({place, type,name, year,role, logo, animation}) => {
+    const { t, i18n } = useTranslation();
 
     return (
         <div className="card-trophy">
@@ -13,7 +15,7 @@ export const WinCard = ({place, type,name, year,role, logo, animation}) => {
                 <h3 className="card-trophy__title">{year}</h3>
                 <p className="card-trophy__text">{type}</p>
                 <p className="card-trophy__text">{name}</p>
-                <p className="card-trophy__text">Role: {role}</p>
+                <p className="card-trophy__text">{t('winsBanner.role')}: {role}</p>
             </div>
         </div>
     )

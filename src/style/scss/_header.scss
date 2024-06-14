@@ -1,5 +1,6 @@
 @import "vars";
 @import "mixins";
+@import "switcher";
 
 .Header{
   @extend %flex-between;
@@ -70,7 +71,5 @@
         height: 36px;
       }
     }
-
-
   }
 }

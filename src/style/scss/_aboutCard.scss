@@ -40,7 +40,10 @@
     font-weight: 200;
     @include media($tablet){
       text-align: center;
-      width: 80%;
+      font-size: 14px;
+      font-weight: 300;
+      color: black;
+      width: 90%;
     }
   }
   &_title{
@@ -58,7 +61,7 @@
     flex-direction: column;
     justify-content: center;
     @include media($tablet){
-      width: 50%;
+      width: 80%;
       margin-top: 20px;
     }
     &__btn{

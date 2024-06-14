@@ -1,0 +1,114 @@
+{
+  "title": "Artmed",
+  "home": "Home",
+  "work": "Work",
+  "projects": "Projects",
+  "email": "artiebears@mail.ru",
+  "name": "Artem Medvedev",
+  "about": {
+    "avatarAlt": "avatar",
+    "title": "Frontend Developer",
+    "description": "Graduate of Sirius University in Mathematical Modeling for Petroleum Engineering. Proficient in frontend development. Won 3 hackathons, specializing in frontend solutions.",
+    "contactMe": "Write me",
+    "downloadResume": "Download Resume"
+  },
+  "projectsComponent": {
+    "semantic": {
+      "name": "Semantic classification of documents",
+      "description": "Service that allows you to determine the class of a document (application, order, agreement, power of attorney, etc.) based on downloaded documents of various formats (pdf, xlsx, rtf, txt, etc.). Such a solution will allow companies to reduce the burden on personnel involved in manual document validation by speeding up the first stage of filtering."
+    },
+    "citizens": {
+      "name": "Processing citizens' appeals",
+      "description": "Solution for the 2023 International Hackathon (2nd place). MVP in the form of a software module using artificial intelligence technologies to automatically classify incoming messages from citizens and highlight named entities."
+    },
+    "rzhd": {
+      "name": "Acceptance of accounting documents",
+      "description": "Automated analysis of primary accounting documents in the register aimed at verification. In the register of acceptance and transfer of primary documents, it is proposed to implement a process of automated verification of the document for correctness and completeness of execution before receiving it for work by an accountant."
+    },
+    "nonStatEq": {
+      "name": "Non-stationary Diffusion Equation",
+      "description": "University project with the solution of the non-stationary diffusion equation using supercomputers"
+    },
+    "navierStokes": {
+      "name": "Navier-Stokes Equation",
+      "description": "Numerical solution for Navier Stokes Equation using SIMPLE (Semi-Implicit Method for Pressure Linked Equations, Patankar & Spalding, 1972) method. : Explicit Finite Volume Method"
+    }
+  },
+  "workComponent": {
+    "skyrus": {
+      "description": "Russian startup in the field of oil and gas engineering. The company is developing an application for tracking data during casing running, as well as predicting it using artificial intelligence"
+    }
+  },
+  "bannerInfoComponent": {
+    "job": "frontend developer",
+    "h1_greeting": "Hello, I'm",
+    "description": "Hello, I'm a passionate Frontend developer and part time freelancer with a keen eye for details.",
+    "writeMeBtn": "Write me",
+    "viewPortfolioBtn": "View portfolio"
+  },
+  "winsBanner": {
+    "role": "role",
+    "1": {
+      "place": "1st",
+      "year": "2023",
+      "type": "regional stage hackathon",
+      "name": "Digital Breakthrough: season AI",
+      "role": "frontend"
+    },
+    "2": {
+      "place": "2nd",
+      "year": "2023",
+      "type": "international stage hackathon",
+      "name": "Digital Breakthrough: season AI",
+      "role": "frontend"
+    },
+    "3": {
+      "place": "2nd",
+      "year": "2024",
+      "type": "regional stage hackathon",
+      "name": "Digital Breakthrough: season AI",
+      "role": "frontend"
+    }
+  },
+  "experienceBanner": {
+    "education": "образование",
+    "work_history": "work history",
+    "tools_i_use": "tools i use",
+    "experienceList": {
+      "education": [
+        {
+          "years": "2022-2024",
+          "place": "Sirius University",
+          "name": "Master's degree of Applied Math",
+          "description": "Mathematical modeling in oil and gas engineering and biomedicine"
+        },
+        {
+          "years": "2018-2022",
+          "place": "Russian University of Transport",
+          "name": "Bachelor of Applied Math",
+          "description": "Coursework - Using machine learning to predict the spread of COVID-19"
+        },
+        {
+          "years": "2022",
+          "place": "VK EDUCATION",
+          "name": "Course of Python",
+          "description": "Deep Python course from one of the biggest Russian IT Company “VK”"
+        }
+      ],
+      "work_history": [
+        {
+          "years": "2022 - Present",
+          "place": "SkyRus",
+          "name": "Junior Python Developer",
+          "description": "Startup developing software for oil and gas engineers using AI"
+        },
+        {
+          "years": "2023 - Present",
+          "place": "Sirius Laboratory",
+          "name": "Frontend Developer",
+          "description": "Making websites for laboratory projects."
+        }
+      ]
+    }
+  }
+}

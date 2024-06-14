@@ -1,20 +1,22 @@
 import WorkCard from "./work_card/WorkCard";
 import skyrus from '../media/img/skyrus.svg'
+import {useTranslation} from "react-i18next";
 
 export const Work = () => {
+    const { t, i18n } = useTranslation();
     const work = [
         {
             companyLogo: skyrus,
             yearsWorked: '2023 - present',
             techStack: 'PyQt, pandas, matplotlib',
-            description: 'Russian startup in the field of oil and gas engineering. The company is developing an application for tracking data during casing running, as well as predicting it using artificial intelligence',
+            description: t('workComponent.skyrus.description'),
             companySite: "https://skyrus.pro/"
         }
     ]
 
     return (
         <main>
-        <h1>Work</h1>
+        <h1>{t('work')}</h1>
             {work.map(({
                            companyLogo,
                            yearsWorked,

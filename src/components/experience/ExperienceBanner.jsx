@@ -1,14 +1,17 @@
 import {ExperienceCard} from "./ExperienceCard";
-import experience from './experience.json'
 import {ExperienceTech} from "./ExperienceTech";
+import {useTranslation} from "react-i18next";
 
 export const ExperienceBanner = () => {
+    const { t, i18n } = useTranslation();
+
+    const experience = t('experienceBanner.experienceList', { returnObjects: true });
 
     const getClass = (which) => {
         switch (which) {
             case 'education':
                 return 'experience__education';
-            case 'work history':
+            case 'work_history':
                 return 'experience__work';
             case 'tools i use':
                 return 'experience__tools';
@@ -23,7 +26,7 @@ export const ExperienceBanner = () => {
                 <div className="experience-card" key={index} >
                     <div className={`experience-card__name ${getClass(key)} mb-5`}>
                         <div className={`horizontal-line ${getClass(key)}-line`}></div>
-                        {key}</div>
+                        {t(`experienceBanner.${key}`)}</div>
                     <ExperienceCard
                         key={key}
                         which={key}
@@ -36,7 +39,7 @@ export const ExperienceBanner = () => {
             <div className="experience-card experience-card__tech" >
                 <div className={`experience-card__name ${getClass('tools i use')} mb-5`}>
                     <div className={`horizontal-line ${getClass('tools i use')}-line`}></div>
-                    {'tools i use'}</div>
+                    {t(`experienceBanner.tools_i_use`)}</div>
                 <ExperienceTech/>
             </div>
 

@@ -5,12 +5,25 @@ import {LeftMenu} from "./components/LeftMenu";
 import {Footer} from "./components/Footer";
 import {Work} from "./components/Work";
 import {Projects} from "./components/Projects";
+import './i18n';
+import i18n from "i18next"; // Путь к файлу i18n.js
+
 
 
 function App() {
     const pages = ['home', 'work', 'projects']
     const [currentPage, setCurrentPage] = useState('home');
     const [menuActive, setMenuActive] = useState(false);
+    const [lang, setLang] = useState(i18n.language);
+
+    const changeLanguage = (newLang) => {
+        i18n.changeLanguage(newLang);
+        setLang(newLang);
+    };
+    const toggleLanguage = (event) => {
+        const newLang = event.target.checked ? 'en' : 'ru'; // Предполагаем, что переключаем между русским и английским
+        changeLanguage(newLang);
+    };
     const onOpenMenu = () => {
         setMenuActive(true);
     }
@@ -41,6 +54,10 @@ function App() {
                 setCurrentPage={setCurrentPage}
                 pages={pages}
                 toggleMenu={toggleMenu}
+                lang={lang}
+                setLang={setLang}
+                changeLanguage={changeLanguage}
+                toggleLanguage={toggleLanguage}
             />
             <LeftMenu
                 currentPage={currentPage}
@@ -49,6 +66,10 @@ function App() {
                 active={menuActive}
                 setMenuActive={setMenuActive}
                 onClose={onCloseMenu}
+                lang={lang}
+                setLang={setLang}
+                changeLanguage={changeLanguage}
+                toggleLanguage={toggleLanguage}
             />
             {getPage()}
             <Footer />

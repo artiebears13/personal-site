@@ -1,18 +1,19 @@
-import artmed_png from '../media/img/artmed.png'
+import artmed_png from '../media/img/artmed.png';
+import { useTranslation } from 'react-i18next';
 
 export const AboutCard = () => {
-
+    const { t } = useTranslation();
 
     return (
         <div className="about-banner">
             <div className="about-banner_avatar">
-                <img src={artmed_png} alt="avatar"/>
+                <img src={artmed_png} alt={t('about.avatarAlt')} />
             </div>
             <div className="about-banner_content">
                 <h3 className="about-banner_title">
-                    frontend developer
+                    {t('about.title')}
                 </h3>
-                Graduate of Sirius University in Mathematical Modeling for Petroleum Engineering. Proficient in frontend development. Won 3 hackathons, specializing in frontend solutions.
+                {t('about.description')}
             </div>
             <div className="about-banner_buttons">
                 <a
@@ -21,17 +22,17 @@ export const AboutCard = () => {
                     rel="noopener noreferrer"
                     className="btn btn-primary about-banner_buttons__btn"
                 >
-                    Write me <i className="fa-solid fa-arrow-right banner-fa" ></i>
+                    {t('about.contactMe')} <i className="fa-solid fa-arrow-right banner-fa"></i>
                 </a>
                 <a
-                    href="#"
+                    href="https://artiebears.com/Medvedev_cv.pdf"
+                    download
                     target='_blank'
                     className="btn btn-sec about-banner_buttons__btn"
                 >
-                    <i className="fa-solid fa-download banner-fa-left"></i> Download Resume
+                    <i className="fa-solid fa-download banner-fa-left"></i> {t('about.downloadResume')}
                 </a>
-
             </div>
         </div>
-    )
+    );
 }

@@ -51,6 +51,14 @@
     &-active{
       font-weight: bold;
     }
+
+  }
+  &__bottom-container{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   &__close{
     position: absolute;

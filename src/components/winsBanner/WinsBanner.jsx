@@ -2,34 +2,36 @@ import React from 'react';
 import { WinCard } from './WinCard';
 import silverTrophy from '../../media/icons/silver-cup.png';
 import goldTrophy from '../../media/icons/gold-cup.png';
+import {useTranslation} from "react-i18next";
 
 export const WinsBanner = () => {
+    const { t, i18n } = useTranslation();
 
     const wins = [
         {
-            place: '1st',
-            year: '2023',
-            type: 'regional stage hackathon',
-            name: 'Digital Breakthrough: season AI',
-            role: 'frontend',
+            place: t('winsBanner.1.place'),
+            year: t('winsBanner.1.year'),
+            type: t('winsBanner.1.type'),
+            name: t('winsBanner.1.name'),
+            role: t('winsBanner.1.role'),
             logo: goldTrophy,
         },
         {
-            place: '2nd',
-            year: '2023',
-            type: 'international stage hackathon',
-            name: 'Digital Breakthrough: season AI',
-            role: 'frontend',
-            logo: silverTrophy,
+            place: t('winsBanner.2.place'),
+            year: t('winsBanner.2.year'),
+            type: t('winsBanner.2.type'),
+            name: t('winsBanner.2.name'),
+            role: t('winsBanner.2.role'),
+            logo: goldTrophy,
         },
         {
-            place: '2nd',
-            year: '2024',
-            type: 'regional stage hackathon',
-            name: 'Digital Breakthrough: season AI',
-            role: 'frontend',
-            logo: silverTrophy,
-        },
+            place: t('winsBanner.3.place'),
+            year: t('winsBanner.3.year'),
+            type: t('winsBanner.3.type'),
+            name: t('winsBanner.3.name'),
+            role: t('winsBanner.3.role'),
+            logo: goldTrophy,
+        }
     ];
 
     return (
