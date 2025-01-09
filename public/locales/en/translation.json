@@ -8,30 +8,46 @@
   "about": {
     "avatarAlt": "avatar",
     "title": "Frontend Developer",
-    "description": "Graduate of Sirius University in Mathematical Modeling for Petroleum Engineering. Proficient in frontend development. Won 3 hackathons, specializing in frontend solutions.",
+    "description": "Graduate of Sirius University in Mathematical Modeling for Petroleum Engineering. Proficient in frontend development. Won 4 hackathons, specializing in frontend solutions.",
     "contactMe": "Write me",
     "downloadResume": "Download Resume"
   },
   "projectsComponent": {
+    "messenger": {
+      "name": "React Messenger",
+      "description": "Developed as part of the VK Education course. Utilizes optimizations, memoization, token-based login. Technologies: React, Redux, CI/CD, TypeScript."
+    },
+    "translator": {
+      "name": "Translator",
+      "description": "Web translator. Implemented as an exam project for the VK Education course within a limited timeframe. Technologies: React, TypeScript."
+    },
+    "animals": {
+      "name": "Automatic Animal Image Filtering",
+      "description": "Solution for the 2024 International Hackathon. Detects animals in images. Technologies: React, React Context. Challenges: Rendering interactive bounding boxes over photos in the correct locations."
+    },
+    "yappy": {
+      "name": "Video Duplicate Finder",
+      "description": "Solution for the 2024 All-Russian Hackathon. Finds duplicate videos in a database. Technologies: React, React Context. Challenges: Implementing a custom video player."
+    },
     "semantic": {
-      "name": "Semantic classification of documents",
-      "description": "Service that allows you to determine the class of a document (application, order, agreement, power of attorney, etc.) based on downloaded documents of various formats (pdf, xlsx, rtf, txt, etc.). Such a solution will allow companies to reduce the burden on personnel involved in manual document validation by speeding up the first stage of filtering."
+      "name": "Semantic Classification of Documents",
+      "description": "Service that allows you to determine the class of a document (application, order, agreement, power of attorney, etc.) based on uploaded documents of various formats (PDF, XLSX, RTF, TXT, etc.). This solution helps companies reduce the burden on personnel involved in manual document validation by speeding up the first stage of filtering."
     },
     "citizens": {
-      "name": "Processing citizens' appeals",
+      "name": "Processing Citizens' Appeals",
       "description": "Solution for the 2023 International Hackathon (2nd place). MVP in the form of a software module using artificial intelligence technologies to automatically classify incoming messages from citizens and highlight named entities."
     },
     "rzhd": {
-      "name": "Acceptance of accounting documents",
-      "description": "Automated analysis of primary accounting documents in the register aimed at verification. In the register of acceptance and transfer of primary documents, it is proposed to implement a process of automated verification of the document for correctness and completeness of execution before receiving it for work by an accountant."
+      "name": "Acceptance of Accounting Documents",
+      "description": "Automated analysis of primary accounting documents in the register aimed at verification. In the register of acceptance and transfer of primary documents, it is proposed to implement a process of automated verification of the document for correctness and completeness of execution before passing it to an accountant for processing."
     },
     "nonStatEq": {
-      "name": "Non-stationary Diffusion Equation",
-      "description": "University project with the solution of the non-stationary diffusion equation using supercomputers"
+      "name": "Non-Stationary Diffusion Equation",
+      "description": "University project focused on solving the non-stationary diffusion equation using supercomputers."
     },
     "navierStokes": {
       "name": "Navier-Stokes Equation",
-      "description": "Numerical solution for Navier Stokes Equation using SIMPLE (Semi-Implicit Method for Pressure Linked Equations, Patankar & Spalding, 1972) method. : Explicit Finite Volume Method"
+      "description": "Numerical solution of the Navier-Stokes Equation using the SIMPLE (Semi-Implicit Method for Pressure Linked Equations, Patankar & Spalding, 1972) method: Explicit Finite Volume Method."
     }
   },
   "workComponent": {
@@ -68,6 +84,13 @@
       "type": "regional stage hackathon",
       "name": "Digital Breakthrough: season AI",
       "role": "frontend"
+    },
+    "4": {
+      "place": "2nd",
+      "year": "2024",
+      "type": "international stage hackathon",
+      "name": "Digital Breakthrough: season AI",
+      "role": "frontend"
     }
   },
   "experienceBanner": {
@@ -87,6 +110,12 @@
           "place": "Russian University of Transport",
           "name": "Bachelor of Applied Math",
           "description": "Coursework - Using machine learning to predict the spread of COVID-19"
+        },
+        {
+          "years": "2024",
+          "place": "VK EDUCATION",
+          "name": "Frontend",
+          "description": "Main frontend technologies, includes React, Redux, CI/CD"
         },
         {
           "years": "2022",

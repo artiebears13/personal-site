@@ -31,6 +31,13 @@ export const WinsBanner = () => {
             name: t('winsBanner.3.name'),
             role: t('winsBanner.3.role'),
             logo: goldTrophy,
+        },{
+            place: t('winsBanner.4.place'),
+            year: t('winsBanner.4.year'),
+            type: t('winsBanner.4.type'),
+            name: t('winsBanner.4.name'),
+            role: t('winsBanner.4.role'),
+            logo: goldTrophy,
         }
     ];
 
