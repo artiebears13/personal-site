@@ -12,6 +12,8 @@ i18n
             loadPath: '/locales/{{lng}}/{{ns}}.json'
         },
         fallbackLng: 'en', // используй английский, если язык не обнаружен
+        supportedLngs: ['ru', 'en'],
+        load: 'languageOnly',
         debug: true,
         interpolation: {
             escapeValue: false, // не требуется для react, так как он умеет избегать XSS
